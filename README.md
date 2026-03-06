@@ -41,7 +41,7 @@ The `docs/` directory contains design documents written before implementation, d
 ## Clone the Repository
 
 ```bash
-git clone https://github.com/sachin-acharya-projects/workflow-engine.git
+git clone https://github.com/sachin-acharya-projects/workflow-automation-engine.git
 cd workflow-engine
 ```
 

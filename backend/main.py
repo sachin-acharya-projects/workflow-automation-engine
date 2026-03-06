@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from engine import execute_workflow, validate_dag
 from models import WorkflowModel, WorkflowRunResult
 
-app = FastAPI(title="Automation Home Test")
+app = FastAPI(title="FlowForge — A Mini Workflow Automation Engine")
 
 # Setup CORS for the frontend
 app.add_middleware(

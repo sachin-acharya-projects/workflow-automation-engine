@@ -72,7 +72,7 @@ export const useStore = create<WorkflowState>((set, get) => ({
     edges: [],
     selectedNodeId: null,
     workflowId: uuidv4(),
-    workflowName: "Home Test: Automation Workflows",
+    workflowName: "FlowForge — A Mini Workflow Automation Engine",
     runResults: {},
     isRunning: false,
 

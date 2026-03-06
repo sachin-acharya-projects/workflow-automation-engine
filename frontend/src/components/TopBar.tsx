@@ -53,9 +53,9 @@ export function TopBar() {
             <div className="flex items-center gap-4">
                 <h1 className="font-bold text-lg text-primary tracking-tight flex items-center gap-2">
                     <span className="bg-primary text-primary-foreground p-1 rounded-sm w-7 h-7 flex items-center justify-center">
-                        A
+                        F
                     </span>
-                    Automation
+                    FlowForge
                 </h1>
                 <div className="text-sm font-medium text-muted-foreground border-l pl-4 hidden md:block">
                     {workflowName}

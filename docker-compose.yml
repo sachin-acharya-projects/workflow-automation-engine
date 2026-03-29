@@ -1,0 +1,25 @@
+services:
+
+  backend:
+    build:
+      context: ./backend
+    image: registry.home.sserver/flowforge/flowforge-backend:latest
+    container_name: fastapi_backend
+    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "8005:8000"
+    volumes:
+      - ./backend:/app
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+    image: registry.home.sserver/flowforge/flowforge-frontend:latest
+    container_name: react_frontend
+    command: ["npx", "vite", "--host", "0.0.0.0", "--port", "80"]
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
